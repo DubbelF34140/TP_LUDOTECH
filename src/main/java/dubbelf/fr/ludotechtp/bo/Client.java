@@ -30,7 +30,7 @@ public class Client {
     @NonNull
     private String noTelephone;
 
-    @ManyToOne(cascade = CascadeType.MERGE)
+    @OneToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "no_adresse", referencedColumnName = "noAdresse")
     private Adresse adresse;
 
