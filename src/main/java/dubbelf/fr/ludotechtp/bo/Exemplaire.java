@@ -12,7 +12,7 @@ public class Exemplaire {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long noExemplaire;
+    private Integer noExemplaire;
 
     @Column(nullable = false, unique = true, length = 50)
     private String codebarre;

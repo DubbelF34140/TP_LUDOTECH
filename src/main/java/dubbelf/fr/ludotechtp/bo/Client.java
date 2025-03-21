@@ -12,7 +12,7 @@ public class Client {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long noClient;
+    private Integer noClient;
 
     @Column(nullable = false, length = 50)
     @NonNull

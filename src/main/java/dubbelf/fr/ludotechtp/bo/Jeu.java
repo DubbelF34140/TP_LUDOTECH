@@ -13,7 +13,7 @@ public class Jeu {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long noJeu;
+    private Integer noJeu;
 
     @Column(nullable = false, length = 100)
     @NonNull

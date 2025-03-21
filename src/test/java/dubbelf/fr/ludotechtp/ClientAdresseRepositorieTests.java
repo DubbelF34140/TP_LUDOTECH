@@ -1,7 +1,9 @@
-package dubbelf.fr.ludotechtp.dal;
+package dubbelf.fr.ludotechtp;
 
 import dubbelf.fr.ludotechtp.bo.Adresse;
 import dubbelf.fr.ludotechtp.bo.Client;
+import dubbelf.fr.ludotechtp.dal.AdresseRepositorie;
+import dubbelf.fr.ludotechtp.dal.ClientRepositorie;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
