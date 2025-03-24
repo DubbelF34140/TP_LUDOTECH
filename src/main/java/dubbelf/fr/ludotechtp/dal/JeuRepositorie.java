@@ -11,4 +11,6 @@ public interface JeuRepositorie extends JpaRepository<Jeu, Integer> {
     List<Jeu> findByTitreContaining(String s);
 
     List<Jeu> findJeuByNoJeu(Integer aLong);
+
+    Jeu findByTitre(String jeuTitre);
 }

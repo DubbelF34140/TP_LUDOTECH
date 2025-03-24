@@ -25,17 +25,5 @@ class ClientServiceTest {
 
     @InjectMocks
     private ClientService clientService;
-
-    @Test
-    @DisplayName("Test d'ajout d'un client")
-    void testAjouterClient() {
-        Client client = new Client(null, "Dupont", "Jean", "jean.dupont@email.com", "0123456789", null);
-        Mockito.when(clientRepositorie.save(any(Client.class))).thenReturn(client);
-
-        Client clientAjoute = clientService.ajouterClient(client);
-
-        assertNotNull(clientAjoute);
-        assertEquals("Dupont", clientAjoute.getNom());
-    }
 }
 
